@@ -1,0 +1,59 @@
+{
+  "componentId" : "8e51f404-fb97-4f15-b2d6-7944ab08b9e0",
+  "name" : "/com/force/develop/testing250-dev-ed/weatherScreen",
+  "tagName" : "c-weather-screen",
+  "parameters" : [ ],
+  "type" : "Page",
+  "pageStructureElement" : true,
+  "fieldDetailsElement" : false,
+  "elements" : [ {
+    "componentId" : "3108fca4-e1e8-48f8-9489-3d4ba67b66c1",
+    "type" : "component::23229240-c74c-407d-97be-9bddb587e0cc",
+    "label" : "Weather Information Center",
+    "properties" : [ ],
+    "parameters" : [ {
+      "name" : "title",
+      "value" : "Weather Information Center",
+      "comparisonType" : "equals",
+      "default" : true
+    } ],
+    "elements" : [ {
+      "type" : "content",
+      "elements" : [ {
+        "componentId" : "700e0d3e-de44-419a-af99-2ff7a58c065e",
+        "type" : "component::5cd71547-c934-470c-9115-a10fe7f0307f",
+        "label" : "Enter City Name",
+        "properties" : [ ],
+        "parameters" : [ {
+          "name" : "class",
+          "value" : "slds-form-element",
+          "comparisonType" : "contains",
+          "default" : false
+        }, {
+          "name" : "label",
+          "value" : "Enter City Name",
+          "comparisonType" : "equals",
+          "default" : false
+        }, {
+          "name" : "type",
+          "value" : "text",
+          "comparisonType" : "equals",
+          "default" : true
+        } ],
+        "elements" : [ ]
+      }, {
+        "componentId" : "b9a93f01-b3a8-47ef-98fd-67761beb2b59",
+        "type" : "component::5c6b2d69-4033-48fd-9f45-8a0f567a8251",
+        "label" : "Get Weather Details button",
+        "properties" : [ ],
+        "parameters" : [ {
+          "name" : "label",
+          "value" : "Get Weather Details",
+          "comparisonType" : "equals",
+          "default" : true
+        } ],
+        "elements" : [ ]
+      } ]
+    } ]
+  } ]
+}

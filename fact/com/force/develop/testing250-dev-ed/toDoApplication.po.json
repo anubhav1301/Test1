@@ -1,0 +1,148 @@
+{
+  "componentId" : "963abc60-07fb-4148-bf51-50e209df585b",
+  "name" : "/com/force/develop/testing250-dev-ed/toDoApplication",
+  "tagName" : "c-to-do-application",
+  "parameters" : [ ],
+  "type" : "Page",
+  "pageStructureElement" : true,
+  "fieldDetailsElement" : false,
+  "elements" : [ {
+    "componentId" : "ed3c8a78-7681-4b1c-a255-71be5ca8426a",
+    "type" : "component::23229240-c74c-407d-97be-9bddb587e0cc",
+    "label" : "Add New Task",
+    "properties" : [ ],
+    "parameters" : [ {
+      "name" : "title",
+      "value" : "Add New Task",
+      "comparisonType" : "equals",
+      "default" : true
+    } ],
+    "elements" : [ {
+      "type" : "content",
+      "elements" : [ {
+        "componentId" : "1278f990-bb77-45fb-a9b4-99ed22b01289",
+        "type" : "component::5cd71547-c934-470c-9115-a10fe7f0307f",
+        "label" : "Enter Task",
+        "properties" : [ ],
+        "parameters" : [ {
+          "name" : "class",
+          "value" : "taskname slds-form-element",
+          "comparisonType" : "contains",
+          "default" : false
+        }, {
+          "name" : "label",
+          "value" : "Enter Task",
+          "comparisonType" : "equals",
+          "default" : false
+        }, {
+          "name" : "name",
+          "value" : "taskname",
+          "comparisonType" : "equals",
+          "default" : true
+        }, {
+          "name" : "type",
+          "value" : "text",
+          "comparisonType" : "equals",
+          "default" : false
+        } ],
+        "elements" : [ ]
+      }, {
+        "componentId" : "62bba0e5-4184-4430-bdfe-2ed78b0e6286",
+        "type" : "component::4071451a-bead-4fdb-84bd-30359e065f25",
+        "label" : "Set End Date",
+        "properties" : [ ],
+        "parameters" : [ {
+          "name" : "class",
+          "value" : "slds-form-element",
+          "comparisonType" : "contains",
+          "default" : false
+        }, {
+          "name" : "label",
+          "value" : "Set End Date",
+          "comparisonType" : "equals",
+          "default" : false
+        }, {
+          "name" : "name",
+          "value" : "taskdate",
+          "comparisonType" : "equals",
+          "default" : false
+        }, {
+          "name" : "type",
+          "value" : "date",
+          "comparisonType" : "equals",
+          "default" : true
+        }, {
+          "name" : "value",
+          "value" : "{param.value}",
+          "comparisonType" : "equals",
+          "default" : false
+        } ],
+        "elements" : [ ]
+      }, {
+        "componentId" : "6380d878-6036-4665-b075-dfac2456011e",
+        "type" : "component::5c6b2d69-4033-48fd-9f45-8a0f567a8251",
+        "label" : "Add Task button",
+        "properties" : [ ],
+        "parameters" : [ {
+          "name" : "class",
+          "value" : "slds-var-p-around_small",
+          "comparisonType" : "contains",
+          "default" : false
+        }, {
+          "name" : "label",
+          "value" : "Add Task",
+          "comparisonType" : "equals",
+          "default" : true
+        } ],
+        "elements" : [ ]
+      } ]
+    } ]
+  }, {
+    "componentId" : "a33730fd-3af8-49d2-8c36-327b7513d54f",
+    "type" : "component::23229240-c74c-407d-97be-9bddb587e0cc",
+    "label" : "To Do List",
+    "properties" : [ ],
+    "parameters" : [ {
+      "name" : "title",
+      "value" : "To Do List",
+      "comparisonType" : "equals",
+      "default" : true
+    } ],
+    "elements" : [ {
+      "type" : "content",
+      "elements" : [ {
+        "componentId" : "b551b670-6f7f-41fe-ad57-80925ce4e043",
+        "type" : "component::0850edcc-d754-4e45-9be8-465f1a57389c",
+        "label" : "utility:check button",
+        "properties" : [ ],
+        "parameters" : [ {
+          "name" : "alternativeText",
+          "value" : "check",
+          "comparisonType" : "equals",
+          "default" : false
+        }, {
+          "name" : "class",
+          "value" : "slds-m-left_xx-small",
+          "comparisonType" : "contains",
+          "default" : false
+        }, {
+          "name" : "iconName",
+          "value" : "utility:check",
+          "comparisonType" : "equals",
+          "default" : true
+        }, {
+          "name" : "name",
+          "value" : "0",
+          "comparisonType" : "equals",
+          "default" : false
+        }, {
+          "name" : "title",
+          "value" : "Delete",
+          "comparisonType" : "equals",
+          "default" : false
+        } ],
+        "elements" : [ ]
+      } ]
+    } ]
+  } ]
+}

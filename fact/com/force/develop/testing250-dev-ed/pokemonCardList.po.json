@@ -1,0 +1,42 @@
+{
+  "componentId" : "bb53c1c1-f3b6-4ad7-a418-40d15b3fbea5",
+  "name" : "/com/force/develop/testing250-dev-ed/pokemonCardList",
+  "tagName" : "c-pokemon-card-list",
+  "parameters" : [ ],
+  "type" : "Page",
+  "pageStructureElement" : true,
+  "fieldDetailsElement" : false,
+  "elements" : [ {
+    "componentId" : "294df7f3-5193-436e-9764-a575ee551b84",
+    "type" : "component::23229240-c74c-407d-97be-9bddb587e0cc",
+    "label" : "Pokemons",
+    "properties" : [ ],
+    "parameters" : [ {
+      "name" : "title",
+      "value" : "Pokemons",
+      "comparisonType" : "equals",
+      "default" : true
+    } ],
+    "elements" : [ {
+      "type" : "content",
+      "elements" : [ {
+        "componentId" : "afeaad74-7aff-4701-9e74-2169c42ed173",
+        "type" : "component::ab050e17-326e-4077-b12b-8e1e7782f4d6",
+        "label" : "Pokemon",
+        "properties" : [ ],
+        "parameters" : [ {
+          "name" : "class",
+          "value" : "slds-var-m-bottom_small slds-p-left_medium slds-p-right_medium slds-form-element",
+          "comparisonType" : "contains",
+          "default" : false
+        }, {
+          "name" : "type",
+          "value" : "search",
+          "comparisonType" : "equals",
+          "default" : true
+        } ],
+        "elements" : [ ]
+      } ]
+    } ]
+  } ]
+}
