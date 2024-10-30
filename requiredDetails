@@ -1,0 +1,44 @@
+pool:
+  name: Azure Pipelines
+  demands: ant
+steps:
+- powershell: |
+
+
+   $webclient = New-Object System.Net.WebClient
+   $url = "https://download.provartesting.com/latest/Provar_ANT_latest.zip"
+   $file = "Provar_ANT_latest.zip"
+   $webclient.DownloadFile($url,$file)
+   Expand-Archive -LiteralPath Provar_ANT_latest.zip -DestinationPath ProvarHome
+
+
+  displayName: PowerShell Script
+
+- task: Ant@1
+  displayName: Ant -Dprovar.home=ProvarHome <Name>/build.xml
+
+  inputs:
+
+    buildFile: <Name>/build.xml
+    Options: -Dprovar.home=ProvarHome
+    targets : runtestsVSTS
+    Publish To Azure Pipelines:[Checked]
+
+    testResultsFiles:  <Name>/Results/*.xml
+
+    jdkVersionOption: 1.11
+
+
+- task: CopyFiles@2
+
+  displayName: Copy Files to: $(build.artifactstagingdirectory)
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)
+    Contents: '**/*.pdf'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+  condition: succeededOrFailed()
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+  condition: succeededOrFailed()
